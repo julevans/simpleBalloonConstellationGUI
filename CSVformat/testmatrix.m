@@ -1,3 +1,6 @@
+%% adding a comment here 
+xxx = 1;
+
 %% Test Matrix Data
 
 %length of arrays
