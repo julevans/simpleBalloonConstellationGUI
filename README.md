@@ -1,1 +1,1 @@
-# simpleBalloonConstellationGUI
+# BalloonConstellationGUI
