@@ -140,26 +140,6 @@ balloon_mol_weight = str2num(get(handles.editOtherBalloon,'String'));
 balloon.FloatAlt = balloon_float_alt;
 balloon.FloatDur = balloon_float_dur;
 
-% Get value of balloon gas popup
-
-%{
-switch get(handles.popupmenuGasList,'Value')  
-    case '1'
-        %nothing, "--select--" default chosen
-    case '2'
-        %gas is helium
-        balloon.MolWeight = 4.003; %[g/mol]
-    case '3'
-        %gas is hydrogen
-        balloon.MolWeight = 2.016; %[g/mol]
-    case '4'
-        %gas is other, get value from textbox
-        balloon.MolWeight = balloon_mol_weight;
-    otherwise
-        warndlg('Not a valid gas selection.');
-end
-%}    
-
 %% ---------------Propagate Aircraft Waypoints for Trajectory-----------------------
 % Code to create aircraft waypoints and propogate 
 
